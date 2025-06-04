@@ -3,7 +3,7 @@ import log from '../log.mjs';
 import { getMsg } from '../locales.mjs';
 
 // Event handler for messageCreate
-export default async function (message) {
+export default async function (message, db = db, log = log, getMsg = getMsg) {
     log.debug('messageCreate', { message });
     if (message.author.bot) return;
     if (!message.guild || message.channel.type !== 0) return;
