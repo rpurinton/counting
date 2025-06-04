@@ -1,3 +1,6 @@
 {
-    "help": "Aceasta este descrierea de ajutor."
+    "help": "Cum să joci jocul de numărat:\n1. Tastează următorul număr în ordine în canal.\n2. Nu poți număra de două ori la rând—așteaptă pe altcineva!\n3. Dacă introduci numărul greșit sau numeri de două ori, numărătoarea se resetează la 0.\n4. La fiecare al 10-lea număr apare un mesaj de sărbătoare.\n5. Starea jocului este salvată, așa că poți continua oricând.\nMult noroc și distracție plăcută!",
+    "count_twice_error": "❌ Nu poți număra de două ori la rând! Numărătoarea a fost resetată la 0.",
+    "wrong_number_error": "❌ Număr greșit! Numărătoarea a fost resetată la 0. Următorul număr ar trebui să fie 1.",
+    "success_message": "🎉 Felicitări! Numărătoarea este acum {num}!"
 }

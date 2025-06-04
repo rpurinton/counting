@@ -1,5 +1,5 @@
 [Unit]
-Description=skeleton
+Description=counting
 After=network-online.target
 Wants=network-online.target
 StartLimitBurst=3
@@ -10,9 +10,9 @@ User=root
 Group=root
 RestartSec=5
 Restart=on-failure
-WorkingDirectory=/opt/skeleton
-ExecStart=/opt/skeleton/skeleton.mjs
-EnvironmentFile=/opt/skeleton/.env
+WorkingDirectory=/opt/counting
+ExecStart=/opt/counting/counting.mjs
+EnvironmentFile=/opt/counting/.env
 
 [Install]
 WantedBy=multi-user.target

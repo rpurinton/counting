@@ -1,3 +1,6 @@
 {
-    "help": "Questo è il testo di aiuto."
+    "help": "Come giocare al gioco del conteggio:\n1. Digita il numero successivo in sequenza nel canale.\n2. Non puoi contare due volte di seguito—attendi qualcun altro!\n3. Se inserisci il numero sbagliato o conti due volte, il conteggio si azzera a 0.\n4. Ogni 10° numero appare un messaggio di celebrazione.\n5. Lo stato del gioco viene salvato, quindi puoi continuare in qualsiasi momento.\nBuona fortuna e buon divertimento!",
+    "count_twice_error": "❌ Non puoi contare due volte di seguito! Il conteggio è stato azzerato a 0.",
+    "wrong_number_error": "❌ Numero sbagliato! Il conteggio è stato azzerato a 0. Il prossimo numero dovrebbe essere 1.",
+    "success_message": "🎉 Congratulazioni! Il conteggio è ora {num}!"
 }

@@ -1,3 +1,6 @@
 {
-    "help": "Detta är hjälpinformationen."
+    "help": "Så här spelar du räknespelet:\n1. Skriv nästa nummer i ordningen i kanalen.\n2. Du får inte räkna två gånger i rad—vänta på någon annan!\n3. Om du skriver fel nummer eller räknar två gånger återställs räkningen till 0.\n4. Vid varje 10:e nummer visas ett firandemeddelande.\n5. Spelets tillstånd sparas, så du kan fortsätta när som helst.\nLycka till och ha kul!",
+    "count_twice_error": "❌ Du får inte räkna två gånger i rad! Räkningen har återställts till 0.",
+    "wrong_number_error": "❌ Fel nummer! Räkningen har återställts till 0. Nästa nummer ska vara 1.",
+    "success_message": "🎉 Grattis! Räkningen är nu {num}!"
 }

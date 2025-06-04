@@ -1,3 +1,6 @@
 {
-    "help": "Dies ist der Hilfetext."
+    "help": "So spielst du das Zählspiel:\n1. Gib die nächste Zahl in der Reihenfolge im Kanal ein.\n2. Du darfst nicht zweimal hintereinander zählen — warte auf jemand anderen!\n3. Wenn du die falsche Zahl eingibst oder zweimal zählst, wird der Zähler auf 0 zurückgesetzt.\n4. Bei jeder 10. Zahl erscheint eine Glückwunsch-Nachricht.\n5. Der Spielstand wird gespeichert, sodass du jederzeit weitermachen kannst.\nViel Glück und viel Spaß!",
+    "count_twice_error": "❌ Du darfst nicht zweimal hintereinander zählen! Der Zähler wurde auf 0 zurückgesetzt.",
+    "wrong_number_error": "❌ Falsche Zahl! Der Zähler wurde auf 0 zurückgesetzt. Die nächste Zahl sollte 1 sein.",
+    "success_message": "🎉 Glückwunsch! Der Zähler steht jetzt bei {num}!"
 }

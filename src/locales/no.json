@@ -1,3 +1,6 @@
 {
-    "help": "Dette er hjelpeteksten."
+    "help": "Slik spiller du tellespelet:\n1. Skriv inn neste tall i rekkefølgen i kanalen.\n2. Du kan ikke telle to ganger på rad—vent på noen andre!\n3. Hvis du skriver inn feil tall eller teller to ganger, tilbakestilles tellingen til 0.\n4. For hvert 10. tall vises en feiringsmelding.\n5. Spilltilstanden lagres, så du kan fortsette når som helst.\nLykke til og ha det gøy!",
+    "count_twice_error": "❌ Du kan ikke telle to ganger på rad! Tellingen er tilbakestilt til 0.",
+    "wrong_number_error": "❌ Feil tall! Tellingen er tilbakestilt til 0. Neste tall skal være 1.",
+    "success_message": "🎉 Gratulerer! Tellingen er nå {num}!"
 }

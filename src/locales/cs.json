@@ -1,3 +1,6 @@
 {
-    "help": "Ez a súgószöveg."
+    "help": "Jak hrát počítací hru:\n1. Napište další číslo v pořadí do kanálu.\n2. Nemůžete počítat dvakrát za sebou — počkejte na někoho jiného!\n3. Pokud zadáte špatné číslo nebo počítáte dvakrát, počítání se vynuluje na 0.\n4. Každé 10. číslo se objeví oslavná zpráva.\n5. Stav hry je uložen, takže můžete kdykoli pokračovat.\nHodně štěstí a bavte se!",
+    "count_twice_error": "❌ Nemůžete počítat dvakrát za sebou! Počítání bylo vynulováno na 0.",
+    "wrong_number_error": "❌ Špatné číslo! Počítání bylo vynulováno na 0. Další číslo by mělo být 1.",
+    "success_message": "🎉 Gratulujeme! Počítání je nyní {num}!"
 }

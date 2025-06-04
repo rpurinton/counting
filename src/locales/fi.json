@@ -1,3 +1,6 @@
 {
-    "help": "Tämä on ohjeteksti."
+    "help": "Näin pelaat laskentapeliä:\n1. Kirjoita seuraava numero järjestyksessä kanavalle.\n2. Et voi laskea kahta kertaa peräkkäin—odota toista!\n3. Jos syötät väärän numeron tai lasket kahdesti, laskuri nollautuu.\n4. Joka 10. numerolla tulee juhlavviesti.\n5. Pelitila tallennetaan, joten voit jatkaa milloin tahansa.\nOnnea ja hauskaa peliä!",
+    "count_twice_error": "❌ Et voi laskea kahta kertaa peräkkäin! Laskuri on nollattu.",
+    "wrong_number_error": "❌ Väärä numero! Laskuri on nollattu. Seuraava numero on 1.",
+    "success_message": "🎉 Onnittelut! Laskuri on nyt {num}!"
 }

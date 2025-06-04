@@ -1,3 +1,6 @@
 {
-    "help": "Dit is de helptekst."
+    "help": "Hoe speel je het telspel:\n1. Typ het volgende nummer in de volgorde in het kanaal.\n2. Je mag niet twee keer achter elkaar tellen—wacht op iemand anders!\n3. Als je het verkeerde nummer invoert of twee keer telt, wordt de telling teruggezet naar 0.\n4. Bij elk 10e nummer verschijnt een feestelijk bericht.\n5. De spelstatus wordt opgeslagen, zodat je altijd kunt doorgaan.\nVeel succes en veel plezier!",
+    "count_twice_error": "❌ Je mag niet twee keer achter elkaar tellen! De telling is teruggezet naar 0.",
+    "wrong_number_error": "❌ Verkeerd nummer! De telling is teruggezet naar 0. Het volgende nummer moet 1 zijn.",
+    "success_message": "🎉 Gefeliciteerd! De telling is nu {num}!"
 }

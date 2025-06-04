@@ -1,3 +1,6 @@
 {
-    "help": "Ini adalah teks bantuan."
+    "help": "Cara bermain permainan menghitung:\n1. Ketik angka berikutnya secara berurutan di saluran.\n2. Anda tidak boleh menghitung dua kali berturut-turut—tunggu orang lain!\n3. Jika Anda memasukkan angka yang salah atau menghitung dua kali, hitungan direset ke 0.\n4. Setiap angka ke-10, pesan perayaan muncul.\n5. Status permainan disimpan, jadi Anda dapat melanjutkan kapan saja.\nSemoga berhasil dan bersenang-senanglah!",
+    "count_twice_error": "❌ Anda tidak boleh menghitung dua kali berturut-turut! Hitungan telah direset ke 0.",
+    "wrong_number_error": "❌ Angka salah! Hitungan telah direset ke 0. Angka berikutnya harus 1.",
+    "success_message": "🎉 Selamat! Hitungan sekarang {num}!"
 }

@@ -1,3 +1,6 @@
 {
-    "help": "Dette er hjælpeteksten."
+    "help": "Sådan spiller du tællespillet:\n1. Skriv det næste tal i rækken i kanalen.\n2. Du må ikke tælle to gange i træk — vent på en anden!\n3. Hvis du indtaster det forkerte tal eller tæller to gange, nulstilles tællingen til 0.\n4. For hvert 10. tal vises en fejring.\n5. Spillets tilstand gemmes, så du kan fortsætte når som helst.\nHeld og lykke og god fornøjelse!",
+    "count_twice_error": "❌ Du må ikke tælle to gange i træk! Tællingen er nulstillet til 0.",
+    "wrong_number_error": "❌ Forkert tal! Tællingen er nulstillet til 0. Det næste tal skal være 1.",
+    "success_message": "🎉 Tillykke! Tællingen er nu {num}!"
 }

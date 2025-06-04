@@ -1,3 +1,6 @@
 {
-    "help": "Ovo je tekst pomoći."
+    "help": "Kako igrati igru brojanja:\n1. Upišite sljedeći broj u kanalu.\n2. Ne možete brojati dva puta zaredom—pričekajte nekog drugog!\n3. Ako unesete pogrešan broj ili brojite dvaput, brojanje se resetira na 0.\n4. Svakih 10 brojeva pojavljuje se poruka za slavlje.\n5. Stanje igre se sprema, tako da možete nastaviti bilo kada.\nSretno i zabavite se!",
+    "count_twice_error": "❌ Ne možete brojati dva puta zaredom! Brojanje je resetirano na 0.",
+    "wrong_number_error": "❌ Pogrešan broj! Brojanje je resetirano na 0. Sljedeći broj treba biti 1.",
+    "success_message": "🎉 Čestitamo! Brojanje je sada {num}!"
 }

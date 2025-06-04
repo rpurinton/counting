@@ -1,3 +1,6 @@
 {
-    "help": "Ceci est le texte d'aide."
+    "help": "Comment jouer au jeu de comptage :\n1. Tapez le nombre suivant dans la séquence dans le canal.\n2. Vous ne pouvez pas compter deux fois de suite—attendez quelqu'un d'autre !\n3. Si vous entrez le mauvais nombre ou comptez deux fois, le compte est réinitialisé à 0.\n4. Un message de célébration apparaît tous les 10 nombres.\n5. L'état du jeu est sauvegardé, vous pouvez donc continuer à tout moment.\nBonne chance et amusez-vous bien !",
+    "count_twice_error": "❌ Vous ne pouvez pas compter deux fois de suite ! Le compte a été réinitialisé à 0.",
+    "wrong_number_error": "❌ Mauvais nombre ! Le compte a été réinitialisé à 0. Le prochain nombre doit être 1.",
+    "success_message": "🎉 Félicitations ! Le compte est maintenant de {num} !"
 }

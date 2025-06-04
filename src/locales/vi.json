@@ -1,3 +1,6 @@
 {
-    "help": "Đây là văn bản trợ giúp."
+    "help": "Cách chơi trò chơi đếm số:\n1. Nhập số tiếp theo theo thứ tự vào kênh.\n2. Bạn không thể đếm hai lần liên tiếp—hãy chờ người khác!\n3. Nếu bạn nhập sai số hoặc đếm hai lần, số đếm sẽ được đặt lại về 0.\n4. Cứ mỗi số thứ 10 sẽ có một tin nhắn chúc mừng.\n5. Trạng thái trò chơi được lưu lại, bạn có thể tiếp tục bất cứ lúc nào.\nChúc may mắn và chơi vui vẻ!",
+    "count_twice_error": "❌ Bạn không thể đếm hai lần liên tiếp! Số đếm đã được đặt lại về 0.",
+    "wrong_number_error": "❌ Sai số! Số đếm đã được đặt lại về 0. Số tiếp theo phải là 1.",
+    "success_message": "🎉 Chúc mừng! Số đếm bây giờ là {num}!"
 }

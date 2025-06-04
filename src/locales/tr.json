@@ -1,3 +1,6 @@
 {
-    "help": "Bu yardım metnidir."
+    "help": "Sayı sayma oyunu nasıl oynanır:\n1. Kanala sıradaki sayıyı yazın.\n2. Aynı kişi arka arkaya iki kez sayamaz—başkasını bekleyin!\n3. Yanlış sayı girerseniz veya iki kez sayarsanız, sayaç 0'a sıfırlanır.\n4. Her 10. sayıda bir kutlama mesajı görünür.\n5. Oyun durumu kaydedilir, böylece istediğiniz zaman devam edebilirsiniz.\nİyi şanslar ve iyi eğlenceler!",
+    "count_twice_error": "❌ Aynı kişi arka arkaya iki kez sayamaz! Sayaç 0'a sıfırlandı.",
+    "wrong_number_error": "❌ Yanlış sayı! Sayaç 0'a sıfırlandı. Sonraki sayı 1 olmalı.",
+    "success_message": "🎉 Tebrikler! Sayaç şimdi {num}!"
 }

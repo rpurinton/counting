@@ -1,3 +1,6 @@
 {
-    "help": "To jest tekst pomocy."
+    "help": "Jak grać w grę w liczenie:\n1. Wpisz następną liczbę w kolejności na kanale.\n2. Nie możesz liczyć dwa razy z rzędu—poczekaj na kogoś innego!\n3. Jeśli wpiszesz złą liczbę lub policzysz dwa razy, licznik zostanie zresetowany do 0.\n4. Przy każdej 10. liczbie pojawia się wiadomość z gratulacjami.\n5. Stan gry jest zapisywany, więc możesz kontynuować w dowolnym momencie.\nPowodzenia i dobrej zabawy!",
+    "count_twice_error": "❌ Nie możesz liczyć dwa razy z rzędu! Licznik został zresetowany do 0.",
+    "wrong_number_error": "❌ Zła liczba! Licznik został zresetowany do 0. Następna liczba powinna być 1.",
+    "success_message": "🎉 Gratulacje! Licznik wynosi teraz {num}!"
 }

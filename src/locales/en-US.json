@@ -1,3 +1,6 @@
 {
-    "help": "This is the help text."
+    "help": "How to Play Counting Game:\n1. Type the next number in sequence in the channel.\n2. You cannot count twice in a row—wait for someone else!\n3. If you enter the wrong number or count twice, the count resets to 0.\n4. Every 10th number, a celebration message appears.\n5. The game state is saved, so you can continue anytime.\nGood luck and have fun!",
+    "count_twice_error": "❌ You cannot count twice in a row! The count has been reset to 0.",
+    "wrong_number_error": "❌ Wrong number! The count has been reset to 0. The next number should be 1.",
+    "success_message": "🎉 Congratulations! The count is now {num}!"
 }

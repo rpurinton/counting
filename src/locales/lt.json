@@ -1,3 +1,6 @@
 {
-    "help": "Tai yra pagalbos tekstas."
+    "help": "Kaip žaisti skaičiavimo žaidimą:\n1. Įrašykite kitą skaičių kanale.\n2. Negalite skaičiuoti du kartus iš eilės—palaukite kito!\n3. Jei įvedate neteisingą skaičių arba skaičiuojate du kartus, skaičiavimas atstatomas į 0.\n4. Kas 10-ą skaičių pasirodo šventinė žinutė.\n5. Žaidimo būsena išsaugoma, todėl galite tęsti bet kada.\nSėkmės ir linksminkitės!",
+    "count_twice_error": "❌ Negalite skaičiuoti du kartus iš eilės! Skaičiavimas atstatytas į 0.",
+    "wrong_number_error": "❌ Neteisingas skaičius! Skaičiavimas atstatytas į 0. Kitas skaičius turėtų būti 1.",
+    "success_message": "🎉 Sveikiname! Skaičiavimas dabar yra {num}!"
 }

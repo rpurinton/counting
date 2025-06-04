@@ -1,3 +1,6 @@
 {
-    "help": "Este é o texto de ajuda."
+    "help": "Como jogar o jogo de contar:\n1. Digite o próximo número na sequência no canal.\n2. Você não pode contar duas vezes seguidas—espere outra pessoa!\n3. Se você digitar o número errado ou contar duas vezes, a contagem é reiniciada para 0.\n4. A cada 10º número, aparece uma mensagem de celebração.\n5. O estado do jogo é salvo, então você pode continuar a qualquer momento.\nBoa sorte e divirta-se!",
+    "count_twice_error": "❌ Você não pode contar duas vezes seguidas! A contagem foi reiniciada para 0.",
+    "wrong_number_error": "❌ Número errado! A contagem foi reiniciada para 0. O próximo número deve ser 1.",
+    "success_message": "🎉 Parabéns! A contagem agora é {num}!"
 }

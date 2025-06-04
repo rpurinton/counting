@@ -1,3 +1,6 @@
 {
-    "help": "Ez a súgószöveg."
+    "help": "Hogyan játssz a számolós játékot:\n1. Írd be a következő számot a csatornába.\n2. Nem számolhatsz kétszer egymás után—várj másra!\n3. Ha rossz számot írsz be vagy kétszer számolsz, a számláló nullázódik.\n4. Minden 10. számnál ünnepi üzenet jelenik meg.\n5. A játék állapota elmentésre kerül, így bármikor folytathatod.\nSok szerencsét és jó szórakozást!",
+    "count_twice_error": "❌ Nem számolhatsz kétszer egymás után! A számláló nullázva lett.",
+    "wrong_number_error": "❌ Rossz szám! A számláló nullázva lett. A következő számnak 1-nek kell lennie.",
+    "success_message": "🎉 Gratulálunk! A számláló most {num}!"
 }
