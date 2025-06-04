@@ -1,9 +1,12 @@
-import db from '../db.mjs';
-import log from '../log.mjs';
-import { getMsg } from '../locales.mjs';
+import dbModule from '../db.mjs';
+import logModule from '../log.mjs';
+import { getMsg as getMsgModule } from '../locales.mjs';
 
 // Event handler for messageCreate
-export default async function (message, db = db, log = log, getMsg = getMsg) {
+export default async function (
+    message,
+    { db = dbModule, log = logModule, getMsg = getMsgModule } = {}
+) {
     log.debug('messageCreate', { message });
     if (message.author.bot) return;
     if (!message.guild || message.channel.type !== 0) return;

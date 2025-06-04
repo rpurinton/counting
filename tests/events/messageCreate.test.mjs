@@ -12,24 +12,25 @@ const makeMockMessage = (overrides = {}) => ({
 });
 
 describe('messageCreate event', () => {
-    let db, log, getMsg;
+    let db, log, getMsg, deps;
     beforeEach(() => {
         db = {
             query: jest.fn()
         };
         log = { debug: jest.fn() };
         getMsg = jest.fn((locale, key) => key + '_msg');
+        deps = { db, log, getMsg };
     });
 
     it('ignores bot messages', async () => {
         const msg = makeMockMessage({ author: { id: 'bot', bot: true } });
-        await messageCreate(msg, db, log, getMsg);
+        await messageCreate(msg, deps);
         expect(db.query).not.toHaveBeenCalled();
     });
 
     it('ignores non-numeric messages', async () => {
         const msg = makeMockMessage({ content: 'hello' });
-        await messageCreate(msg, db, log, getMsg);
+        await messageCreate(msg, deps);
         expect(db.query).not.toHaveBeenCalled();
     });
 
@@ -37,7 +38,7 @@ describe('messageCreate event', () => {
         db.query.mockImplementationOnce(() => Promise.resolve([[]]))
             .mockImplementationOnce(() => Promise.resolve());
         const msg = makeMockMessage();
-        await messageCreate(msg, db, log, getMsg);
+        await messageCreate(msg, deps);
         expect(db.query).toHaveBeenCalledWith(
             'INSERT INTO counting_state (channel_id, current_count, last_user_id, last_message_id) VALUES (?, 0, NULL, NULL)',
             [msg.channel.id]
@@ -47,7 +48,7 @@ describe('messageCreate event', () => {
     it('resets if user counts twice', async () => {
         db.query.mockResolvedValueOnce([[{ channel_id: 'chan1', current_count: 0, last_user_id: 'user1', last_message_id: 'msg0' }]]);
         const msg = makeMockMessage();
-        await messageCreate(msg, db, log, getMsg);
+        await messageCreate(msg, deps);
         expect(db.query).toHaveBeenCalledWith(
             'UPDATE counting_state SET current_count = 0, last_user_id = ?, last_message_id = ? WHERE channel_id = ?',
             [msg.author.id, msg.id, msg.channel.id]
@@ -58,7 +59,7 @@ describe('messageCreate event', () => {
     it('resets if wrong number', async () => {
         db.query.mockResolvedValueOnce([[{ channel_id: 'chan1', current_count: 2, last_user_id: 'user2', last_message_id: 'msg0' }]]);
         const msg = makeMockMessage({ content: '5', author: { id: 'user1', bot: false } });
-        await messageCreate(msg, db, log, getMsg);
+        await messageCreate(msg, deps);
         expect(db.query).toHaveBeenCalledWith(
             'UPDATE counting_state SET current_count = 0, last_user_id = ?, last_message_id = ? WHERE channel_id = ?',
             [msg.author.id, msg.id, msg.channel.id]
@@ -70,7 +71,8 @@ describe('messageCreate event', () => {
         db.query.mockResolvedValueOnce([[{ channel_id: 'chan1', current_count: 9, last_user_id: 'user2', last_message_id: 'msg0' }]]);
         const msg = makeMockMessage({ content: '10', author: { id: 'user1', bot: false } });
         getMsg = jest.fn(() => '🎉 Congratulations! The count is now {num}!');
-        await messageCreate(msg, db, log, getMsg);
+        deps.getMsg = getMsg;
+        await messageCreate(msg, deps);
         expect(db.query).toHaveBeenCalledWith(
             'UPDATE counting_state SET current_count = ?, last_user_id = ?, last_message_id = ?, updated_at = CURRENT_TIMESTAMP WHERE channel_id = ?',
             [10, msg.author.id, msg.id, msg.channel.id]
