@@ -11,6 +11,11 @@ export default async function (
     if (message.author.bot) return;
     if (!message.guild || message.channel.type !== 0) return;
 
+    // Await the db promise if needed
+    if (typeof db.then === 'function') {
+        db = await db;
+    }
+
     const num = parseInt(message.content.trim(), 10);
     if (isNaN(num)) return;
 
